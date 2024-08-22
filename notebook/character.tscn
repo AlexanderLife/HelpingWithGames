@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://gcaq2aofqf3a"]
+
+[ext_resource type="Script" path="res://notebook/character.gd" id="1_p27oc"]
+
+[node name="Character" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p27oc")
+
+[node name="Profile" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Splash" type="TextureRect" parent="Profile"]
+layout_mode = 2
+
+[node name="Bio" type="VBoxContainer" parent="Profile"]
+layout_mode = 2
+
+[node name="CharacterName" type="Label" parent="Profile/Bio"]
+layout_mode = 2
+
+[node name="Data" type="Label" parent="Profile/Bio"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Info" type="Label" parent="ScrollContainer"]
+layout_mode = 2
